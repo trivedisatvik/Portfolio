@@ -1,0 +1,241 @@
+#heroSection{
+    /* height: 100vh;*/
+     
+    background-image: url("../static/images/slider-right-dec.jpg") ;
+    margin-left: 10%;
+    
+    background-position: right top;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+#heroTextContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+#lftimg{
+    height:500px;
+    
+}
+
+#about{
+    color: blueviolet;
+    font-size: large;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    #heroSection{
+        /* height: 100vh;
+        width: 100vw; */
+        background-image: url("../static/images/slider-right-dec.jpg");
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+#parentDivFooter{
+    display: flex;
+    flex-direction: row;
+   
+    margin-right: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    #parentDivFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+#dash{
+    height: 0px;
+    width: 5%;
+    margin-top: 2%;
+    border: 1px solid blue;
+}
+
+
+
+
+#copyrightSection{
+    background-color: blueviolet;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+}
+
+header {
+    
+    height: 50px;
+    
+}
+.btn{
+    border: 2px solid whitesmoke;
+    color:blue;
+    font-size: small;
+    padding :5px;
+    border-radius: 30%;
+    transition-duration: 0.4s;
+}
+
+.btn:hover{
+    background-color: #008CBA;
+    color: white;
+}
+#imgg{
+    padding: 80px;
+    
+}
+#navbarParent {
+    display: flex;
+    
+    
+    flex-grow: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    position: relative;
+}
+#navv{
+    display: flex;
+    
+    
+    flex-grow: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    position: relative;
+}
+#navItemsParent{
+    display: flex;
+    padding-bottom: 20px;
+    
+    flex-grow: 1;
+}
+#deadSpace{
+    flex-grow: 1;
+}
+.navChild{
+    flex-grow: 1;
+    color: black;
+}
+
+ #navv > #navItemsParent {
+    float: right;
+} 
+#navv > #navItemsParent > .navChildd {
+    text-align: center;
+    line-height: 40px;
+    margin-left: 70px;
+}
+#navv > #navItemsParent .navChildd #navItemsParent .navChildd {
+    width: 100%;
+    text-align: left;
+}
+#navv #navItemsParent .navChildd:hover {
+    cursor: pointer;
+    position: relative;
+}
+#navv #navItemsParent .navChildd:hover > #navItemsParent {
+    display: block;
+}
+#navv #navItemsParent .navChildd:hover > a {
+    color: #777;
+}
+#navv > #navItemsParent > .navChildd > a {
+    cursor: pointer;
+    display: block;
+    outline: none;
+    width: 100%;
+    text-decoration: none;
+}
+#navv > #navItemsParent > .navChildd{
+    float: left;
+}
+#navv a {
+    color: rgb(14, 13, 13);
+}
+#navv > #navItemsParent .navChildd #navItemsParent {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 2000;
+}
+#navv > #navItemsParent .navChildd #navItemsParent .navChildd > a {
+    text-decoration: none;
+}
+[type="check"],
+label {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    #navv #navItemsParent {
+        display: none;
+    }
+    label {
+        display: block;
+        background: #222;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    }
+    label:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: #777;
+        margin: 7px 5px;
+        box-shadow: 0px 10px 0px #777, 0px 20px 0px #777;
+    }
+    [type="checkbox"]:checked ~ #navItemsParent {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        right: 20px;
+        left: 20px;
+    }
+    #navv a {
+        color: #777;
+    }
+    #navv #navItemsParent .navChildd {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: left;
+        background: #222;
+        text-indent: 20px;
+    }
+    #navv > #navItemsParent > .navChildd {
+        margin-left: 0px;
+    }
+    #navv > #navItemsParent .navChildd #navItemsParent .navChildd {
+        display: block;
+        float: none;
+    }
+    #navv > #navItemsParent .navChildd #navItemsParent {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 9999;
+        float: none;
+    }
+    h1 {
+        font-size: 26px;
+    }
+}
